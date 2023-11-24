@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function() {
     const element = document.getElementById('element');
     shiftElementLeftByAmount(element, 700, 1000);
   });
@@ -23,3 +23,13 @@ homeButtons.forEach(function(button) {
         this.classList.remove("glow");
     });
 });
+
+function rotateIcons() {
+  const icons = document.querySelectorAll('.parent4 li i');
+  icons.forEach(icon => {
+    icon.style.transform = 'rotate(360deg)';
+    icon.style.transition = 'transform 1.5s ease-in-out';
+  });
+}
+
+window.addEventListener('load', rotateIcons);
