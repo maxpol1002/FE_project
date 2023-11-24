@@ -35,6 +35,14 @@ ul{
     justify-content: center;
     flex-direction: column;
 }
+#element{
+    margin-left: 1500px;
+    transition: transform 1s ease;
+}
+#element::first-letter{
+    color: #CF6E74;
+}
+
 #ul2{
     display: flex;
     align-items: center;
@@ -274,6 +282,10 @@ ul{
     padding: 10px;
     color: black;
     border-radius: 12px;
+    transition: border 0s;
+}
+.button1:hover{
+    border: 3px solid black;
 }
 .post-button{
     background-color: white;
@@ -326,6 +338,10 @@ ul{
     border-radius: 12px;
     margin-left: 5px;
     font-weight: bold;
+    transition: background-color 0.5s;
+}
+.glow{
+    box-shadow: 0 0 10px #CF6E74;
 }
 .edit-button{
     border-radius: 7px;
@@ -333,6 +349,9 @@ ul{
     position: absolute;
     bottom: 6px;
     right: 5px; 
+}
+.edit-button:hover{
+    background-color: #CF6E74;
 }
 .edit-button1{
     border-radius: 7px;
